@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/music_scrollView"
+    tools:context="com.exam.sky.one.fragment.MusicChildFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/music_cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@mipmap/default_hp_image" />
+
+            <include
+                layout="@layout/music_detail_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_below="@+id/music_cover"
+                android:id="@+id/rl_brief"
+                ></include>
+            <include layout="@layout/music_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_brief"
+                ></include>
+        </RelativeLayout>
+
+        <include layout="@layout/layout_music_comment"></include>
+    </LinearLayout>
+
+
+</ScrollView>

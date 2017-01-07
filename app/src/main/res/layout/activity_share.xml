@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_share"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.exam.sky.one.activity.ShareActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="分享&amp;收藏"
+        android:textColor="#878787"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/split1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#ddd"></View>
+
+    <ImageView
+        android:onClick="wechatFri"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/wechat_fri" />
+
+    <ImageView
+        android:onClick="wechatMoments"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/wechat_moments" />
+
+
+    <ImageView
+        android:onClick="sinaWeibo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/sinaweibo" />
+
+    <ImageView
+        android:onClick="QQ"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/qq" />
+
+    <ImageView
+        android:onClick="copyLink"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/copylink" />
+
+    <ImageView
+        android:onClick="storage"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/stow" />
+
+
+</LinearLayout>

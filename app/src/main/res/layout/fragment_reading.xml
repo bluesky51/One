@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.exam.sky.one.fragment.ReadingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/read_ad"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_point_container"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/read_ad"
+        android:orientation="horizontal"></LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/read_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/read_ad"/>
+</RelativeLayout>

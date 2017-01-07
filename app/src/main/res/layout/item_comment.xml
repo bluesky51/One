@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/split1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f1f1f1"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/split1"
+            android:id="@+id/relativeLayout2">
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="author"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/img_head"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/img_head"
+                android:layout_below="@+id/tv_author"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:text="date"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/head"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:textSize="11sp"
+            android:layout_margin="10dp"
+            android:id="@+id/tv_content1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout2" />
+    </RelativeLayout>
+</LinearLayout>

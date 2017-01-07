@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/main_hp_bg"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@mipmap/default_hp_image"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imageView"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="VOL.1108" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageView"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="在一起，不在一起" />
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_author"
+                android:lineSpacingExtra="3dp"
+                android:minLines="3"
+                android:textSize="11sp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_date"
+                android:layout_alignRight="@+id/tv_date"
+                android:layout_below="@+id/tv_content1"
+                android:text="20"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:drawableLeft="@mipmap/diary"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="小记"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_like1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/tv_share"
+                android:drawableLeft="@drawable/selector_laud"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="38788"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@mipmap/share_image"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

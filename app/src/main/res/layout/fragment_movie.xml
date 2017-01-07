@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exam.sky.one.fragment.MovieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.exam.sky.one.view.AutoRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/movie_listview"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"/>
+
+</RelativeLayout>

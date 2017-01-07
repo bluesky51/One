@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exam.sky.one.activity.MovieActivity">
+
+    <com.baidu.cyberplayer.core.BVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/img_return"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:onClick="back"
+            android:src="@drawable/selector_return" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <!--进度条及文字展示进度-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btn_play">
+
+                <TextView
+                    android:id="@+id/tvCurrentDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="@color/colorAccent" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tvMaxDuration"
+                    android:layout_toRightOf="@+id/tvCurrentDuration" />
+
+                <TextView
+                    android:id="@+id/tvMaxDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:text="00:00"
+                    android:textColor="@color/colorAccent" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/selector_music_play" />
+
+        </RelativeLayout>
+
+    </com.baidu.cyberplayer.core.BVideoView>
+
+</RelativeLayout>

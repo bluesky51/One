@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HomeImgAnimations">
+        <item name="android:windowEnterAnimation">@anim/img_in</item>
+        <item name="android:windowExitAnimation">@anim/img_out</item>
+    </style>
+
+    <style name="ReadAdDetailAnimations">
+        <item name="android:windowEnterAnimation">@anim/up_in</item>
+        <item name="android:windowExitAnimation">@anim/down_out</item>
+    </style>
+
+    <style name="shareWindow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowEnterAnimation">@anim/up_in</item>
+        <item name="android:windowExitAnimation">@anim/down_out</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <declare-styleable name="RotateTextView" >
+        <attr name="degree" format="dimension" />
+    </declare-styleable>
+</resources>
